@@ -101,7 +101,7 @@ cd your folder name
 ### Install
 
 ```
-npm install
+npm run install
 
 npm run build
 ```
