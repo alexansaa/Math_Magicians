@@ -14,7 +14,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -67,12 +66,6 @@
 - **HTML template to render the main page**
 - **Dynamic rendering of static scores with the use of an array of JSON objects**
 - **Bootstrap and CSS styling**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo!](https://alexansaa.github.io/math_magicians/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
