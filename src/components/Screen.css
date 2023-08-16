@@ -1,0 +1,10 @@
+.zeroPlace {
+  background-color: rgb(116, 121, 125);
+  text-align: right;
+  height: 50px;
+  width: 300px;
+  color: aliceblue;
+  font-size: large;
+  font-weight: normal;
+  padding-right: 5px;
+}
