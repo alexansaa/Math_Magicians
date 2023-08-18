@@ -3,19 +3,6 @@ import { useState, useEffect } from 'react';
 const baseURL = 'https://api.api-ninjas.com/v1/quotes?category=movies';
 const apiKey = 'xs1lhvlYhQQTDXI2TUdCeQ==JJgaQ0kspETdrSRz';
 
-class Quote {
-  constructor(quote, author, category) {
-    this.quote = quote;
-    this.author = author;
-    this.category = category;
-  }
-}
-
-function GetElement(quoteObj) {
-  const MyQuote = new Quote(quoteObj[0].quote, quoteObj[0].author, quoteObj[0].category);
-  return `${MyQuote.quote} -${MyQuote.author}-`;
-}
-
 export default function RederQuote() {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -44,8 +31,7 @@ export default function RederQuote() {
   if (hasError) {
     return (
       <div>
-        <p>Quote:</p>
-        <p>We don&apos;t have quotes right now!</p>
+        <p>Quote error: We don&apos;t have quotes right now!</p>
       </div>
     );
   }
@@ -53,16 +39,25 @@ export default function RederQuote() {
   if (isLoading) {
     return (
       <div>
-        <p>Quote:</p>
-        <p>Is Loading...</p>
+        <p>Quote is Loading...</p>
       </div>
     );
   }
 
   return (
     <div>
-      <p>Quote:</p>
-      <p>{GetElement(data)}</p>
+      <p>
+        Quote:
+      </p>
+      <p>
+        {data[0].quote}
+      </p>
+      <p>
+        Author:
+      </p>
+      <p>
+        {data[0].author}
+      </p>
     </div>
   );
 }
