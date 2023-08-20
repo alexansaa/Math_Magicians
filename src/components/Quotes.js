@@ -50,13 +50,13 @@ export default function RederQuote() {
         Quote:
       </p>
       <p>
-        {data[0].quote}
+        {data[0]?.quote}
       </p>
       <p>
         Author:
       </p>
       <p>
-        {data[0].author}
+        {data[0]?.author}
       </p>
     </div>
   );
